@@ -1,0 +1,33 @@
+body{
+    font-family: Arial;
+    text-align: center;
+    background: #00f2ff;
+    color: 
+    rgb(235, 255, 255);
+}
+
+header{
+    background: rgb(0, 225, 255);
+    color: rgb(255, 254, 254);
+    padding: 15px;
+}
+
+main{
+    margin: 20px;
+}
+
+input{
+    padding: 8px;
+    width: 200px;
+}
+
+button{
+    padding: 8px 20px;
+    background: rgb(31, 97, 195);
+    color: white;
+    border: none;
+}
+
+footer{
+    margin-top: 30px;
+}
