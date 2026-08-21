@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro de Produtos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Cadastro de Produtos</h1>
+
+        <p class="subtitulo">Cadastre seus produtos abaixo</p>
+
+        <div class="formulario">
+
+            <input type="text" id="nome" placeholder="Nome do produto">
+
+            <input type="number" id="preco" placeholder="Preço">
+
+            <input type="text" id="categoria" placeholder="Categoria">
+
+            <input type="number" id="desconto" placeholder="Desconto (%)">
+
+            <button class="btn-cadastrar" onclick="cadastrarProduto()">
+                + Cadastrar
+            </button>
+
+        </div>
+
+        <div id="produtos"></div>
+
+    </div>
+
+    <script src="atividade2.js"></script>
+
+</body>
+
+</html>
