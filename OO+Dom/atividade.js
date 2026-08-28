@@ -63,8 +63,25 @@ botaoCadastrar.addEventListener("click", function () {
         Number(preco.value),
         categoria.value,
         Number(desconto.value)
+    
     );
-
+    localStorage.setItem("produto", produto);
     produto.exibir();
 
 });
+
+const dados = localStorage.getItem("produto");
+
+if (dados) {
+    
+    const produtoSalvo = JSON.parse(dados);
+
+    const produto = new Produto(
+        produtoSalvo.nome,
+        produtoSalvo.preco,
+        produtoSalvo.categoria,
+        produtoSalvo.desconto
+    );
+
+    produto.exibir();
+}

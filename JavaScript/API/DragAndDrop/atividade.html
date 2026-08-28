@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recicle e Ganhe</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>♻️ Recicle e Ganhe</h1>
+        <p>Arraste os objetos para a lixeira correta!</p>
+    </header>
+
+    <main>
+
+        <div class="placar">
+
+            <div>
+                ⭐ Pontos:
+                <strong id="pontos">0</strong>
+            </div>
+
+            <div>
+                📦 Restantes:
+                <strong id="restantes">8</strong>
+            </div>
+
+        </div>
+
+
+        <div id="mensagem">
+            🖱️ Arraste um objeto para a lixeira correta!
+        </div>
+
+
+        <section class="area">
+
+            <h2>📦 OBJETOS</h2>
+
+            <div id="objetos">
+
+                <div class="objeto"
+                    draggable="true"
+                    data-tipo="papel">
+
+                    <span>📄</span>
+                    <p>Papel</p>
+
+                </div>
+
+
+                <div class="objeto"
+                    draggable="true"
+                    data-tipo="plastico">
+
+                    <span>🧴</span>
+                    <p>Garrafa</p>
+
+                </div>
+
+
+                <div class="objeto"
+                    draggable="true"
+                    data-tipo="vidro">
+
+                    <span>🍾</span>
+                    <p>Vidro</p>
+
+                </div>
+
+
+                <div class="objeto"
+                    draggable="true"
+                    data-tipo="metal">
+
+                    <span>🥫</span>
+                    <p>Lata</p>
+
+                </div>
+
+
+                <div class="objeto"
+                    draggable="true"
+                    data-tipo="papel">
+
+                    <span>📰</span>
+                    <p>Jornal</p>
+
+                </div>
+
+
+                <div class="objeto"
+                    draggable="true"
+                    data-tipo="plastico">
+
+                    <span>🛍️</span>
+                    <p>Sacola</p>
+
+                </div>
+
+
+                <div class="objeto"
+                    draggable="true"
+                    data-tipo="vidro">
+
+                    <span>🫙</span>
+                    <p>Pote</p>
+
+                </div>
+
+
+                <div class="objeto"
+                    draggable="true"
+                    data-tipo="metal">
+
+                    <span>🔩</span>
+                    <p>Metal</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="area">
+
+            <h2>🗑️ LIXEIRAS</h2>
+
+            <div class="lixeiras">
+
+
+                <div class="lixeira"
+                    data-tipo="papel">
+
+                    <span>🗑️</span>
+
+                    <h3>PAPEL</h3>
+
+                    <div class="conteudo-lixeira"></div>
+
+                </div>
+
+
+                <div class="lixeira"
+                    data-tipo="plastico">
+
+                    <span>🗑️</span>
+
+                    <h3>PLÁSTICO</h3>
+
+                    <div class="conteudo-lixeira"></div>
+
+                </div>
+
+
+                <div class="lixeira"
+                    data-tipo="vidro">
+
+                    <span>🗑️</span>
+
+                    <h3>VIDRO</h3>
+
+                    <div class="conteudo-lixeira"></div>
+
+                </div>
+
+
+                <div class="lixeira"
+                    data-tipo="metal">
+
+                    <span>🗑️</span>
+
+                    <h3>METAL</h3>
+
+                    <div class="conteudo-lixeira"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <button onclick="reiniciar()">
+            🔄 Reiniciar
+        </button>
+
+    </main>
+
+
+    <footer>
+        Atividade de Drag and Drop - SENAI
+    </footer>
+
+
+    <script src="atividade.js"></script>
+
+</body>
+
+</html>
