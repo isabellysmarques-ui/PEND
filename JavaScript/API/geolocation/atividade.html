@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Geolocalização e Câmera</title>
+    <link rel="stylesheet" href="atividade.css">
+</head>
+
+<body>
+
+    <h1>Registro de Visita Técnica</h1>
+
+    <h2>Geolocalização</h2>
+
+    <button onclick="localizar()">Obter localização</button>
+
+    <p>Latitude: <span id="latitude">---</span></p>
+    <p>Longitude: <span id="longitude">---</span></p>
+    <p>Precisão: <span id="precisao">---</span></p>
+
+    <h2>Câmera</h2>
+
+    <button onclick="abrirCamera()">Abrir câmera</button>
+    <button onclick="tirarFoto()">Tirar foto</button>
+
+    <br><br>
+
+    <video id="camera" width="400" autoplay></video>
+
+    <br><br>
+
+    <canvas id="canvas" width="400" height="300"></canvas>
+
+    <h3>Foto capturada:</h3>
+
+    <img id="foto" width="400">
+
+    <script src="atividade.js"></script>
+
+</body>
+
+</html>
